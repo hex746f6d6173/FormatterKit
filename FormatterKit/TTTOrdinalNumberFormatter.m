@@ -51,6 +51,24 @@ static NSString * const kTTTOrdinalNumberFormatterDefaultOrdinalIndicator = @"."
     NSString *languageCode = [[self locale] objectForKey:NSLocaleLanguageCode];
     if ([languageCode isEqualToString:@"en"]) {
         return [self enOrdinalIndicatorStringFromNumber:number];
+    } else if ([languageCode isEqualToString:@"fr"]) {
+        return [self frOrdinalIndicatorStringFromNumber:number];
+    } else if ([languageCode isEqualToString:@"nl"]) {
+        return [self nlOrdinalIndicatorStringFromNumber:number];
+    } else if ([languageCode isEqualToString:@"it"]) {
+        return [self itOrdinalIndicatorStringFromNumber:number];
+    } else if ([languageCode isEqualToString:@"pt"]) {
+        return [self ptOrdinalIndicatorStringFromNumber:number];
+    } else if ([languageCode isEqualToString:@"es"]) {
+        return [self esOrdinalIndicatorStringFromNumber:number];
+    } else if ([languageCode isEqualToString:@"ga"]) {
+        return [self gaOrdinalIndicatorStringFromNumber:number];
+    } else if ([languageCode isEqualToString:@"ja"]) {
+        return [self jaOrdinalIndicatorStringFromNumber:number];
+    } else if ([languageCode isEqualToString:@"zh"]) {
+        return [self zhHansOrdinalIndicatorStringFromNumber:number];
+    } else if ([languageCode isEqualToString:@"ca"]) {
+        return [self caOrdinalIndicatorStringFromNumber:number];
     } else {
         return kTTTOrdinalNumberFormatterDefaultOrdinalIndicator;
     }
