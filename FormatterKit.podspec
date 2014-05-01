@@ -14,43 +14,43 @@ Pod::Spec.new do |s|
 
   s.subspec 'AddressFormatter' do |ss|
     ss.source_files = 'FormatterKit/TTTAddressFormatter.{h,m}'
-    ss.resources = 'Localizations/en.lproj'
+    ss.resources = 'Localizations/**'
     ss.frameworks = 'AddressBook'
   end
 
   s.subspec 'ArrayFormatter' do |ss|
     ss.source_files = 'FormatterKit/TTTArrayFormatter.{h,m}'
-    ss.resources = 'Localizations/en.lproj'
+    ss.resources = 'Localizations/**'
   end
 
   s.subspec 'ColorFormatter' do |ss|
     ss.source_files = 'FormatterKit/TTTColorFormatter.{h,m}'
-    ss.resources = 'Localizations/en.lproj'
+    ss.resources = 'Localizations/**'
   end
 
   s.subspec 'LocationFormatter' do |ss|
     ss.source_files = 'FormatterKit/TTTLocationFormatter.{h,m}'
-    ss.resources = 'Localizations/en.lproj'
+    ss.resources = 'Localizations/**'
     ss.frameworks = 'CoreLocation'
   end
 
   s.subspec 'OrdinalNumberFormatter' do |ss|
     ss.source_files = 'FormatterKit/TTTOrdinalNumberFormatter.{h,m}'
-    ss.resources = 'Localizations/en.lproj'
+    ss.resources = 'Localizations/**'
   end
 
   s.subspec 'TimeIntervalFormatter' do |ss|
     ss.source_files = 'FormatterKit/TTTTimeIntervalFormatter.{h,m}'
-    ss.resources = 'Localizations/en.lproj'
+    ss.resources = 'Localizations/**'
   end
 
   s.subspec 'UnitOfInformationFormatter' do |ss|
     ss.source_files = 'FormatterKit/TTTUnitOfInformationFormatter.{h,m}'
-    ss.resources = 'Localizations/en.lproj'
+    ss.resources = 'Localizations/**'
   end
 
   s.subspec 'URLRequestFormatter' do |ss|
     ss.source_files = 'FormatterKit/TTTURLRequestFormatter.{h,m}'
-    ss.resources = 'Localizations/en.lproj'
+    ss.resources = 'Localizations/**'
   end
 end
